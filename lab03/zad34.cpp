@@ -22,33 +22,26 @@ int main () {
     cout << "N: ";
     cin >> N;
 
-    if ( N >= 0 ) {
+    if ( N < 0 ) {
 
+        cout << "N musi być nieujemne" << endl;
 
-
-
-
-        
     }
 
+    else {
 
+        int silnia = 1;
 
+        while ( N > 0 ) {
 
+            silnia = silnia * N;
+            N = N - 1; 
 
+        }
 
+        cout << "Silnia = " << silnia << endl;
 
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
     return 0;
 }
