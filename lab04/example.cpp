@@ -13,7 +13,34 @@ using namespace std;
 
 int main() {
 
+    int N;
+    cin >> N;
+
+    for (int i=0; i<=N; i++) {
+
+        cout << i;
+
+        if (i != N) {
+
+            cout << ", " << endl;
+        }
+    }
+
+    for (int i=N; i>=0; i--) {
+
+        cout << i;
+
+        if (i != 0) {
+
+            cout << ", " << endl;
+        }
     
+    }
+
+    for (int i=0; i<=N; i=i+2) {
+
+        cout << i << endl;
+    }
 
     return 0;
 }
